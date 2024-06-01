@@ -9,7 +9,7 @@ const Heading: React.FC<HeadingProps> = ({ label }) => {
     return (
         <>
             <FadeInUp>
-                <div className="font-bold sm:text-6xl text-5xl py-8 hover:underline">
+                <div className="font-bold sm:text-6xl text-5xl py-8">
                     {label}
                 </div>
             </FadeInUp>

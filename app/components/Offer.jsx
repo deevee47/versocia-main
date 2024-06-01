@@ -58,7 +58,7 @@ const Offer = () => {
   }, [observerInstance, videoRef]);
 
   return (
-    <div id="offer" className="w-full flex flex-col my-36">
+    <div id="offer" className="w-full flex flex-col py-36 bg-black text-white sm:px-20">
       <Heading label={'The versocia Summer Offer'} />
       <div className="mx-auto mb-36">
         <Video ref={videoRef} />
@@ -66,9 +66,9 @@ const Offer = () => {
 
       <Heading label={'Adding More to your Glass'} />
     
-      <div className="mt-16 sm:w-[60%] w-[80%] mx-auto flex justify-center flex-col items-center text-left">
+      <div className="pt-16 sm:w-[60%] w-[80%] mx-auto flex justify-center flex-col items-center text-left">
         <FadeInUp>
-          <div className="mb-16">
+          <div className="pb-16">
             <span className="font-bold">Summer's calling, and so are new students! </span>
             Enroll with Versocia before the season ends and unlock{' '}
             <span className="font-bold">lifetime FREE premium creatives valued at $xyz. </span>

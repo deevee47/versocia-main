@@ -5,9 +5,9 @@ import Heading from './ui/Heading'
 
 const How = () => {
   return (
-    <section className='mt-36'>
+    <section className='pt-36 sm:px-20 bg-black text-white'>
       <Heading label={'How We Do It'} />
-      <div className="bg-red-700   rounded-2xl flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <div className="rounded-2xl flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <div className='z-50 rounded-2xl shadow-2xl my-auto bg-black '>
           <StickyScroll content={content} contentClassName={""} />
         </div>

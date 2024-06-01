@@ -8,8 +8,8 @@ import About from "./components/About";
 
 export default function Home() {
   return (
-    <main className="relative flex justify-center items-center flex-col text-xl sm:text-2xl sm:px-10 px-5 font-[questrial] ">
-        <div className="max-w-full sm:px-20 w-full">
+    <main className="relative flex justify-center items-center flex-col text-xl font-[questrial]">
+      <div className="max-w-full w-full">
           <Navbar />
           <Hero />
           <About />

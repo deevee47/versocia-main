@@ -6,7 +6,7 @@ import FadeInUp from './FadeInUp';
 
 const About: React.FC = () => {
     return (
-        <section id='about'>
+        <section id='about' className='sm:px-20  bg-black text-white'>
             <Heading
                 label={
                     <div className="flex flex-col justify-between sm:flex-row items-center">

@@ -7,7 +7,7 @@ interface HeroProps { }
 const Hero: React.FC<HeroProps> = () => {
   return (
     <FadeInUp>
-    <div className="h-screen w-full flex flex-col justify-center items-center">
+    <div className="h-screen w-full flex flex-col justify-center items-center bg-white">
       <div className="pt-30 pb-10">
         <Image
           className="w-[45vw]"
