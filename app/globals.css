@@ -38,3 +38,36 @@
         transform: translateY(0);
     }
 }
+
+
+.card:nth-child(1n) {
+  top: 30px;
+}
+
+.card:nth-child(2n) {
+  top: 50px;
+}
+
+.card:nth-child(3n) {
+  top: 70px;
+}
+
+.card:nth-child(4n) {
+  top: 90px;
+}
+
+.card:nth-child(5n) {
+  top: 110px;
+}
+
+.card:nth-child(6n) {
+  top: 130px;
+}
+
+.card:nth-child(7n) {
+  top: 150px;
+}
+
+.card:nth-child(8n) {
+  top: 170px;
+}

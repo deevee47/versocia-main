@@ -10,13 +10,13 @@ export default function Home() {
   return (
     <main className="relative flex justify-center items-center flex-col text-xl font-[questrial]">
       <div className="max-w-full w-full">
-          <Navbar />
-          <Hero />
-          <About />
-          <How />
-          <Offer />
-          <Contact />
-        </div>
-      </main>
+        <Navbar />
+        <Hero />
+        <About />
+        <How />
+        <Offer />
+        <Contact />
+      </div>
+    </main>
   );
 }
