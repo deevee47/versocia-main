@@ -6,7 +6,6 @@ import FadeInUp from './FadeInUp';
 
 const Video = React.forwardRef((props, ref) => {
   return (
-    <div className="relative rounded-2xl overflow-hidden">
       <video
         width="full"
         height="full"
@@ -14,12 +13,10 @@ const Video = React.forwardRef((props, ref) => {
         loop
         preload="auto"
         ref={ref}
-        className="rounded-2xl"
       >
         <source src="./glass.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    </div>
   );
 });
 
