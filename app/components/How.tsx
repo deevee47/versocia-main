@@ -5,7 +5,7 @@ import Card from './ui/Card'
 
 const How = () => {
   return (
-    <section className='pt-36 pb-10 sm:px-20 bg-black text-white'>
+    <section id='howwedoit' className='pt-36 pb-10 sm:px-20 bg-black text-white'>
       <Heading
         label={
           <div className="flex flex-col justify-between sm:flex-row items-center">

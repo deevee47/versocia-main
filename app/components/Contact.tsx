@@ -14,7 +14,7 @@ const Contact = () => {
   }, []);
 
   return showContact ? (
-    <section id='contact' className='footer h-screen w-full flex flex-col pt-2 sticky -z-10 bottom-0'>
+    <section id='contact' className='h-screen w-full flex flex-col pt-2 bottom-0'>
       <span className="sm:px-20 px-10" ><Heading
         label={
           <div className='flex flex-col justify-between sm:flex-row items-center pb-8'>

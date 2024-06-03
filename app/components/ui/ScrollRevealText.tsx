@@ -4,8 +4,13 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 
-// Declare the module to avoid TS errors
-declare module 'split-type';
+// Augment the existing module instead of redeclaring it
+declare module 'split-type' {
+    interface SplitType {
+        chars?: HTMLElement[];
+        words?: HTMLElement[];
+    }
+}
 
 interface ScrollRevealTextProps {
     text: string;
@@ -35,32 +40,28 @@ const ScrollRevealText: React.FC<ScrollRevealTextProps> = ({
         const p = section.querySelector('.reveal-type') as HTMLParagraphElement | null;
         if (!p) return;
 
-        // Explicitly cast to any to bypass type checks for SplitType
-        // This is a temporary solution until proper types are available
-        const splitText = new (SplitType as any)(p, { types: 'chars' });
+        const splitText = new SplitType(p, { types: 'words' });
 
-        // Handle potential undefined or non-array chars
-        const chars = splitText?.chars || [];
+        // Handle potential undefined or non-array words
+        const words = splitText?.words || [];
 
-        gsap.fromTo(
-            chars,
-            {
-                color: bgColor,
+        // Set initial color to fgColor (light color)
+        gsap.set(words, { color: bgColor });
+
+        // Animate from fgColor (light) to bgColor (dark)
+        gsap.to(words, {
+            color: fgColor,
+            duration: 0.5,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: section,
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: true,
+                markers: false,
+                toggleActions: 'play play reverse reverse',
             },
-            {
-                color: fgColor,
-                duration: 0.3,
-                stagger: 0.02,
-                scrollTrigger: {
-                    trigger: section,
-                    start: 'top 80%',
-                    end: 'top 20%',
-                    scrub: true,
-                    markers: false,
-                    toggleActions: 'play play reverse reverse',
-                },
-            }
-        );
+        });
 
         return () => {
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
@@ -70,6 +71,10 @@ const ScrollRevealText: React.FC<ScrollRevealTextProps> = ({
     const style: React.CSSProperties = {
         backgroundColor,
         borderBottom,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '2rem',
         ...sectionStyles
     };
 
@@ -79,9 +84,20 @@ const ScrollRevealText: React.FC<ScrollRevealTextProps> = ({
                 className="reveal-type"
                 data-bg-color={bgColor}
                 data-fg-color={fgColor}
+                style={{
+                    textAlign: 'center',
+                    wordSpacing: '0.25rem',
+                    lineHeight: '1.2',
+                }}
             >
                 {text}
             </p>
+            <style jsx global>{`
+        .reveal-type span {
+          display: inline-block;
+          white-space: nowrap;
+        }
+      `}</style>
         </section>
     );
 };

@@ -19,7 +19,7 @@ const About: React.FC = () => {
                 }
             />
             <FadeInUp>
-            <div className="bg-black p-14 rounded-lg sm:p-24 text-center sm:text-3xl text-2xl"> 
+            <div className="bg-black rounded-lg sm:p-24 text-center sm:text-3xl text-2xl"> 
                     <ScrollRevealText
                     text="A Social Media Marketing Agency for Language Schools. We're your bridge to a world of engaged students, passionate about language learning. Our team of social media experts goes beyond the classroom, crafting compelling narratives that showcase your school's unique identity and the transformative power of languages. We become an extension of your team, working collaboratively to achieve your goals."
                     bgColor="#1f2937"
