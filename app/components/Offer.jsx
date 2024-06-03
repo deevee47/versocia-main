@@ -55,7 +55,7 @@ const Offer = () => {
   }, [observerInstance, videoRef]);
 
   return (
-    <div id="offer" className="w-full flex flex-col py-36 bg-black text-white sm:px-20">
+    <div id="offer" className="w-full flex flex-col sm:py-36 py-0 bg-black text-white sm:px-20">
       <Heading label={'The versocia Summer Offer'} />
       <div className="mx-auto mb-36">
         <Video ref={videoRef} />
