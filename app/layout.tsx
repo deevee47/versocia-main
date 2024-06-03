@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html className="scroll-smooth transition-all ease-in" lang="en">
       <head>
+        <link rel="icon" href="./white-icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet"></link>
