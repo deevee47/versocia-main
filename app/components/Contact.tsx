@@ -39,7 +39,7 @@ const Contact = () => {
         <span className='font-bold'>Prefer email?</span> Shoot us a message at <a className='underline' href="mailto:nishant@versocia.com">nishant@versocia.com</a> and we&apos;ll be happy to answer your questions.
       </div>
 
-      <footer className='w-full flex justify-between items-center bg-black py-7 mt-36'>
+      <footer className='w-full flex justify-between items-center bg-[#fafafb] sm:px-20 py-7 mt-36'>
         <div className='flex'>
           <img className='w-20 mr-[1vw] object-contain sm:flex' src="./logo.png" alt="Versocia Logo" />
           <img className='w-8 sm:w-10 pr-[1vw] object-contain' src="./white-icon.png" alt="Versocia Logo" />
