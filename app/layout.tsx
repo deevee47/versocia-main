@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Versocia",
   description: "ddd",
+  icons: "/white-icon.png"
 };
 
 export default function RootLayout({
