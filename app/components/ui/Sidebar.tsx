@@ -5,7 +5,7 @@ interface SidebarProps {
     onClose: () => void;
 }
 
-const navItems = ['About', 'How we do it', 'Testimonials', 'Offer', 'Contact'];
+const navItems = ['About', 'How we do it', 'Offer','Testimonials', 'Contact'];
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     const [clickedItem, setClickedItem] = useState<string | null>(null);

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 
-type NavItem = 'About' | 'How we do it' | 'Testimonials' | 'Offer' | 'Contact';
+type NavItem = 'About' | 'How we do it' | 'Offer' | 'Testimonials' | 'Contact';
 const navItems: NavItem[] = ['About', 'How we do it', 'Testimonials', 'Offer', 'Contact'];
 
 const Navbar: React.FC = () => {
