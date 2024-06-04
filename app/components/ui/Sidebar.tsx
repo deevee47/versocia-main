@@ -1,37 +1,58 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-// Define the props interface
 interface SidebarProps {
     isOpen: boolean;
     onClose: () => void;
 }
 
-// Define the array of navigation items
-const navItems: string[] = ['About', 'How we do it', 'Testimonials', 'Offer', 'Contact'];
+const navItems = ['About', 'How we do it', 'Testimonials', 'Offer', 'Contact'];
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
+    const [clickedItem, setClickedItem] = useState<string | null>(null);
+    const [redirectUrl, setRedirectUrl] = useState<string | null>(null);
+
+    useEffect(() => {
+        if (redirectUrl) {
+            window.location.href = redirectUrl;
+        }
+    }, [redirectUrl]);
+
     if (!isOpen) return null;
 
-    // Function to convert item text to URL-friendly format
     const getItemHref = (item: string): string => {
         return `#${item.toLowerCase().replace(/\s/g, '')}`;
     };
 
-    // Function to render each navigation item
+    const handleItemClick = (item: string, href: string) => {
+        setClickedItem(item);
+        setTimeout(() => {
+            setClickedItem(null);
+            setRedirectUrl(href);
+            onClose();
+        }, 500);
+    };
+
     const renderNavItem = (item: string): React.ReactElement => {
+        const isClicked = clickedItem === item;
+        const href = getItemHref(item);
+
         return (
             <a
                 key={item}
-                href={getItemHref(item)}
+                href={href}
                 className='text-2xl font-semibold relative overflow-hidden group'
-                onClick={onClose}
+                onClick={(e) => {
+                    e.preventDefault();
+                    handleItemClick(item, href);
+                }}
             >
-                <span className="transition-transform duration-500 ease-in-out group-hover:-translate-y-full inline-block">
-                    {item}
-                </span>
-                <span className="absolute left-0 top-full transition-transform duration-500 ease-in-out group-hover:-translate-y-full inline-block text-black">
-                    {item}
-                </span>
+                {item}
+                <div
+                    className={`
+                        absolute left-0 bottom-0 h-0.5 bg-black transition-all duration-500 ease-in-out
+                        ${isClicked ? 'w-full' : 'w-0'}
+                    `}
+                ></div>
             </a>
         );
     };
@@ -39,7 +60,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     return (
         <div className="fixed inset-0 z-50 overflow-hidden">
             <div
-                className="absolute inset-0 bg-gray-500 opacity-75"
+                className="absolute inset-0 bg-gray-500 bg-opacity-75"
                 onClick={onClose}
                 role="button"
                 aria-label="Close sidebar"
@@ -50,7 +71,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                 <div className="flex justify-between items-center mb-12">
                     <a href="#about" className="group">
                         <img
-                            className='w-12 transition-transform duration-300 ease-in-out group-hover:rotate-[360deg]'
+                            className='w-12 transition-transform duration-700 ease-in-out group-hover:rotate-[720deg]'
                             src="./white-icon.png"
                             alt="versocia logo"
                         />
