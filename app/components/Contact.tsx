@@ -1,17 +1,9 @@
 "use client"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Heading from "./ui/Heading";
 
 const Contact = () => {
-  const [showContact, setShowContact] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowContact(true);
-    }, 3000);
-
-    return () => clearTimeout(timeout);
-  }, []);
+  const [showContact, setShowContact] = useState(true);
 
   return showContact ? (
     <section id='contact' className='h-screen w-full flex flex-col pt-2 bottom-0'>
@@ -23,7 +15,7 @@ const Contact = () => {
           </div>
         }
       /></span>
-      
+
       <div className='sm:px-20 px-10 pb-6'>
         <span className=''>We&apos;re passionate about helping language schools thrive, and we&apos;d love to hear from you!</span> Our friendly team is just a message away.
       </div>
@@ -39,7 +31,7 @@ const Contact = () => {
         <span className='font-bold'>Prefer email?</span> Shoot us a message at <a className='underline' href="mailto:nishant@versocia.com">nishant@versocia.com</a> and we&apos;ll be happy to answer your questions.
       </div>
 
-      <footer className='w-full flex justify-between items-center bg-[#fafafb] sm:px-20 px-10 py-7 bottom-0 absolute'>
+      <footer className='w-full flex justify-between items-center bg-[#fafafb] sm:px-20 px-10 py-7 bottom-0 sm:absolute'>
         <div className='flex'>
           <img className='w-16 sm:w-20 mr-[1vw] object-contain sm:flex' src="./logo.png" alt="Versocia Logo" />
           <img className='w-4 sm:w-10 pr-[1vw] object-contain' src="./white-icon.png" alt="Versocia Logo" />
