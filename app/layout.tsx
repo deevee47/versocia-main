@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Versocia - Social Media Marketing Agency",
     description:
       "Versocia is a leading language school marketing agency that helps educational institutions attract more students through effective digital marketing strategies.",
