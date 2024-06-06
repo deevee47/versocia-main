@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Versocia is a leading language school marketing agency that helps educational institutions attract more students through effective digital marketing strategies.",
   keywords: "language school marketing, language school advertising, language school promotion, language school social media, language school SEO, SMMA, Social Media Marketing Agency, Agency",
   icons: {
-    icon: "/favicon.ico",
+    icon: "https://i.ibb.co/5ThhKMM/white-icon.png",
   },
   openGraph: {
     title: "Versocia - Social Media Marketing Agency",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "Versocia",
     images: [
       {
-        url: "/favicon.ico",
+        url: "https://i.ibb.co/5ThhKMM/white-icon.png",
         width: 1200,
         height: 630,
       },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Versocia - Social Media Marketing Agency",
     description:
       "Versocia is a leading language school marketing agency that helps educational institutions attract more students through effective digital marketing strategies.",
-    images: ["/favicon.ico"],
+    images: ["https://i.ibb.co/5ThhKMM/white-icon.png"],
   },
   
 };
