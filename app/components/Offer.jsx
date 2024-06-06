@@ -13,6 +13,7 @@ const Video = React.forwardRef((props, ref) => {
         loop
         preload="auto"
         ref={ref}
+        loading="lazy"
       >
         <source src="./glass.mp4" type="video/mp4" />
         Your browser does not support the video tag.

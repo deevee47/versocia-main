@@ -33,8 +33,8 @@ const Contact = () => {
 
       <footer className='w-full flex justify-between items-center bg-[#fafafb] sm:px-20 px-10 py-7 bottom-0 sm:absolute'>
         <div className='flex'>
-          <img className='w-16 sm:w-20 mr-[1vw] object-contain sm:flex' src="./logo.png" alt="Versocia Logo" />
-          <img className='w-4 sm:w-10 pr-[1vw] object-contain' src="./white-icon.png" alt="Versocia Logo" />
+          <img loading="lazy" className='w-16 sm:w-20 mr-[1vw] object-contain sm:flex' src="./logo.png" alt="Versocia Logo" />
+          <img loading="lazy" className='w-4 sm:w-10 pr-[1vw] object-contain' src="./white-icon.png" alt="Versocia Logo" />
         </div>
         <div className='block sm:text-sm text-[2.5vw]'>Copyright © 2024 versocia. All rights reserved.</div>
       </footer>

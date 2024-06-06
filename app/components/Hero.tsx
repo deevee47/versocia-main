@@ -15,6 +15,7 @@ const Hero: React.FC<HeroProps> = () => {
           alt="Versocia Logo"
           width={500}
           height={500}
+          priority
         />
       </div>
       <div className="uppercase text-xl sm:text-4xl font-[Ovo] tracking-wider">
