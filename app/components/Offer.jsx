@@ -11,7 +11,7 @@ const Video = React.forwardRef((props, ref) => {
         height="full"
         muted
         loop
-        preload="auto"
+        preload="none"
         ref={ref}
         loading="lazy"
       >

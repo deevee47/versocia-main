@@ -23,9 +23,9 @@ const Contact = () => {
         <span className='font-bold'>Slide into our DMs! We&apos;re active on all major social media platforms.</span> Hit us up at any of the handles below and we&apos;ll get back to you within 24 hours.
       </div>
       <div className='sm:px-20 px-10 pb-24 py-16 w-full justify-evenly flex flex-row'>
-        <a href="https://www.linkedin.com/company/cat-digitals/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BhqeobfQlSBGwHsL1FHdSEA%3D%3D">LinkedIn</a>
-        <a href="https://www.facebook.com/profile.php?id=100093571020006">Facebook</a>
-        <a href="https://www.instagram.com/_catdigitals_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+        <a href="https://www.linkedin.com/company/versocia/">LinkedIn</a>
+        <a href="https://www.facebook.com/share/jVzNLjeruvRwykhH/?mibextid=qi2Omg">Facebook</a>
+        <a href="https://www.instagram.com/versocia?utm_source=qr&igsh=azV3eWxleGpnODk5">Instagram</a>
       </div>
       <div className="sm:px-20 px-10">
         <span className='font-bold'>Prefer email?</span> Shoot us a message at <a className='underline' href="mailto:nishant@versocia.com">nishant@versocia.com</a> and we&apos;ll be happy to answer your questions.

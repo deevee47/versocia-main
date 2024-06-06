@@ -28,7 +28,22 @@ export const metadata: Metadata = {
     ],
     locale: "en-US",
     type: "website",
-  }  
+  },
+  twitter: {
+    card: "summary",
+    title: "Versocia - Social Media Marketing Agency",
+    description:
+      "Versocia is a leading language school marketing agency that helps educational institutions attract more students through effective digital marketing strategies.",
+    images: [
+      {
+        url: "https://i.ibb.co/BCQxch3/blackbg-logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Versocia SMMA",
+      },
+    ],
+
+  },
 };
 
 export default function RootLayout({
