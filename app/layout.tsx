@@ -6,22 +6,22 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Versocia - Language School Marketing Agency",
+  title: "Versocia - Social Media Marketing Agency",
   description:
     "Versocia is a leading language school marketing agency that helps educational institutions attract more students through effective digital marketing strategies.",
-  keywords: "language school marketing, language school advertising, language school promotion, language school social media, language school SEO",
+  keywords: "language school marketing, language school advertising, language school promotion, language school social media, language school SEO, SMMA, Social Media Marketing Agency, Agency",
   icons: {
     icon: "/white-icon.png",
   },
   openGraph: {
-    title: "Versocia - Language School Marketing Agency",
+    title: "Versocia - Social Media Marketing Agency",
     description:
       "Versocia is a leading language school marketing agency that helps educational institutions attract more students through effective digital marketing strategies.",
     url: "https://www.versocia.com/",
     siteName: "Versocia",
     images: [
       {
-        url: "https://www.versocia.com/versocia-og-image.jpg",
+        url: "/white-icon.png",
         width: 1200,
         height: 630,
       },
@@ -31,12 +31,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Versocia - Language School Marketing Agency",
+    title: "Versocia - Social Media Marketing Agency",
     description:
       "Versocia is a leading language school marketing agency that helps educational institutions attract more students through effective digital marketing strategies.",
-    images: [
-      "https://www.versocia.com/versocia-twitter-image.jpg",
-    ],
+    images: ["/white-icon.png"],
   },
 };
 
@@ -57,8 +55,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-          <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-            <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"></link>
       </head>
       <body className={inter.className}>
         {children}
