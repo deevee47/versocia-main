@@ -16,7 +16,7 @@ const How = () => {
           </div>
         }
       />
-      <div className="wrapper max-w-2xl mx-auto mt-20 bg-black">
+      <div className="wrapper max-w-2xl mx-auto mt-20 bg-black ">
 
         <Card title='Uncover Your Unique Story' description="Every language school has a unique story to tell. We start by diving deep to uncover the heart and soul of your school' s identity. What makes your learning experience special?" />
 

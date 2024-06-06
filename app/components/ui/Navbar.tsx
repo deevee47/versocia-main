@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   const getItemHref = (item: NavItem): string => `#${item.toLowerCase().replace(/\s/g, '')}`;
 
   return (
-    <nav>
+    <nav className='sticky top-0 z-50'>
       <div className='sm:hidden flex justify-between items-center p-4 bg-[#fafafb]'>
         <a href="#hero">
           <img className='w-9' src="./white-icon.png" alt="versocia logo" />

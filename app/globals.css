@@ -41,33 +41,33 @@
 
 
 .card:nth-child(1n) {
-  top: 30px;
+  top: 120px;
 }
 
 .card:nth-child(2n) {
-  top: 50px;
+  top: 140px;
 }
 
 .card:nth-child(3n) {
-  top: 70px;
+  top: 160px;
 }
 
 .card:nth-child(4n) {
-  top: 90px;
+  top: 180px;
 }
 
 .card:nth-child(5n) {
-  top: 110px;
+  top: 200px;
 }
 
 .card:nth-child(6n) {
-  top: 130px;
+  top: 220px;
 }
 
 .card:nth-child(7n) {
-  top: 150px;
+  top: 240px;
 }
 
 .card:nth-child(8n) {
-  top: 170px;
+  top: 260px;
 }
