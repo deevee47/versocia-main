@@ -6,7 +6,7 @@ const Contact = () => {
   const [showContact, setShowContact] = useState(true);
 
   return showContact ? (
-    <section id='contact' className='h-screen w-full flex flex-col pt-2 bottom-0'>
+    <section id='contact' className=' w-full flex flex-col pt-2 bottom-0'>
       <span className="sm:px-20 px-10" ><Heading
         label={
           <div className='flex flex-col justify-between sm:flex-row items-center pb-8'>
@@ -27,11 +27,11 @@ const Contact = () => {
         <a href="https://www.facebook.com/share/jVzNLjeruvRwykhH/?mibextid=qi2Omg">Facebook</a>
         <a href="https://www.instagram.com/versocia?utm_source=qr&igsh=azV3eWxleGpnODk5">Instagram</a>
       </div>
-      <div className="sm:px-20 px-10">
+      <div className="sm:px-20 px-10 pb-28">
         <span className='font-bold'>Prefer email?</span> Shoot us a message at <a className='underline' href="mailto:nishant@versocia.com">nishant@versocia.com</a> and we&apos;ll be happy to answer your questions.
       </div>
 
-      <footer className='w-full flex justify-between items-center bg-[#fafafb] sm:px-20 px-10 py-7 bottom-0 sm:absolute'>
+      <footer className='w-full flex justify-between items-center bg-[#fafafb] sm:px-20 px-10 py-7'>
         <div className='flex'>
           <img loading="lazy" className='w-16 sm:w-20 mr-[1vw] object-contain sm:flex' src="./logo.png" alt="Versocia Logo" />
           <img loading="lazy" className='w-4 sm:w-10 pr-[1vw] object-contain' src="./white-icon.png" alt="Versocia Logo" />
