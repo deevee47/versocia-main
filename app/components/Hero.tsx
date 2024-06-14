@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = () => {
       </div>
       <div
         style={{ wordSpacing: '40px' }}
-        className="pt-10 pb-20 font-normal text-sm text-center sm:text-2xl font-[Work Sans] tracking-wide"
+        className="pt-10 pb-20 font-normal text-sm text-center sm:text-2xl font-[Work Sans] sm:tracking-wide tracking-normal"
       >
         A Social Media Marketing Agency
       </div>

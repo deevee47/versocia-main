@@ -13,7 +13,7 @@ const About: React.FC = () => {
                         <div className="font-bold sm:text-6xl text-5xl py-8">About</div>
                         <div className="text-center font-bold sm:text-xl text-2xl">
                             What makes us,<br />
-                            us.
+                            Us.
                         </div>
                     </div>
                 }
@@ -26,7 +26,7 @@ const About: React.FC = () => {
                     fgColor="white"
                     backgroundColor="black"
                     />
-                <div className="mt-36 text-3xl sm:text-4xl tracking-wider text-white">
+                    <div className="mt-36 text-3xl sm:text-4xl tracking-wider font-[Ovo] text-white">
                     Simply beyond Marketing
                 </div>
                 </div>
