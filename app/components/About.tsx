@@ -26,7 +26,7 @@ const About: React.FC = () => {
                     fgColor="white"
                     backgroundColor="black"
                     />
-                    <div className="mt-36 text-3xl sm:text-4xl tracking-wider font-[Ovo] text-white">
+                    <div className="mt-36 text-3xl sm:text-4xl tracking-wider font-[Ovo] text-white uppercase">
                     Simply beyond Marketing
                 </div>
                 </div>
