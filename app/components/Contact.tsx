@@ -17,7 +17,7 @@ const Contact = () => {
       /></span>
 
       <div className='sm:px-20 px-10 pb-6'>
-        <span className=''>We&apos;re passionate about helping language schools thrive, and we&apos;d love to hear from you!</span> Our friendly team is just a message away.
+        <span className=''>We're passionate about helping Remodeling Companies thrive, and we&apos;d love to hear from you!</span> Our friendly team is just a message away.
       </div>
       <div className='sm:px-20 px-10 py-6'>
         <span className='font-bold'>Slide into our DMs! We&apos;re active on all major social media platforms.</span> Hit us up at any of the handles below and we&apos;ll get back to you within 24 hours.

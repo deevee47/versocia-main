@@ -21,7 +21,7 @@ const About: React.FC = () => {
             <FadeInUp>
             <div className="bg-black rounded-lg sm:p-24 text-center sm:text-3xl text-2xl"> 
                     <ScrollRevealText
-                    text="A Social Media Marketing Agency for Language Schools. We're your bridge to a world of engaged students, passionate about language learning. Our team of social media experts goes beyond the classroom, crafting compelling narratives that showcase your school's unique identity and the transformative power of languages. We become an extension of your team, working collaboratively to achieve your goals."
+                        text="A Social Media Marketing Agency for Remodelling Companies. We're your bridge to a world of stunning transformations and delighted homeowners. Our team of social media experts goes beyond the basics, telling stories that resonate with homeowners seeking exceptional remodeling solutions. Through targeted strategies, we ensure your brand stands out in a competitive market, attracting more clients and driving growth for your remodeling business."
                     bgColor="#1f2937"
                     fgColor="white"
                     backgroundColor="black"
