@@ -67,7 +67,7 @@ const Offer = () => {
       <div className="pt-16 sm:w-[60%] w-[80%] mx-auto flex justify-center flex-col items-center text-left">
         <FadeInUp>
           <div className="pb-16">
-            <span className="font-bold">Summer's calling, and so are new homeowners! </span>
+            <span className="font-bold">Summer's calling, and so are new opportunities! </span>
             Partner with Versocia before the season ends and unlock {' '}
             <span className="font-bold">lifetime FREE premium ad copy insights and strategies valued at $350/month. </span>
           </div>
@@ -76,7 +76,7 @@ const Offer = () => {
         <div>
           <FadeInUp>
             <span className="font-bold">We're not afraid to put our money where our mouth is. </span>
-            That's why we offer a <span className="font-bold">30-day</span>  free trial. If your homeowner inquiries aren't trending upwards after 30 days, you can keep all the clients we bring you for  <span className='font-bold'>completely free</span>, and we won't charge you a thing if you're not satisfied with the results. Think of it as our way of saying, "Let's make this Summer outstanding for your remodeling business!"
+            That's why we offer a <span className="font-bold">30-day</span>  free trial. If your customer inquiries aren't trending upwards after 30 days, you can keep all the clients we bring you for <span className='font-bold'>completely free</span>, and we won't charge you a thing if you're not satisfied with the results. Think of it as our way of saying, "Let's make this Summer outstanding for your business!"
             <br />
           </FadeInUp>
         </div>
