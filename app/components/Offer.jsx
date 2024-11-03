@@ -60,7 +60,7 @@ const Offer = () => {
       id="offer"
       className="w-full flex flex-col sm:py-36 bg-black text-white sm:px-20 pb-0"
     >
-      <Heading label={"The versocia Monsoon Offer"} />
+      <Heading label={"The versocia Winter Offer"} />
       <div className="mx-auto sm:mb-36 ">
         <Video ref={videoRef} />
       </div>
