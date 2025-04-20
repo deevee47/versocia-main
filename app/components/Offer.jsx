@@ -15,7 +15,7 @@ const Video = React.forwardRef((props, ref) => {
         ref={ref}
         loading="lazy"
       >
-        <source src="./winter.mp4" type="video/mp4" />
+        <source src="./glass.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
   );
@@ -60,7 +60,7 @@ const Offer = () => {
       id="offer"
       className="w-full flex flex-col sm:py-36 bg-black text-white sm:px-20 pb-0"
     >
-      <Heading label={"The versocia Winter Offer"} />
+      <Heading label={"The versocia Summer Offer"} />
       <div className="mx-auto sm:mb-36 ">
         <Video ref={videoRef} />
       </div>
@@ -71,7 +71,7 @@ const Offer = () => {
         <FadeInUp>
           <div className="pb-16">
             <span className="font-bold">
-              Winter's calling, and so are new opportunities!{" "}
+              Summer's calling, and so are new opportunities!{" "}
             </span>
             Partner with Versocia before the season ends and unlock{" "}
             <span className="font-bold">
@@ -91,7 +91,7 @@ const Offer = () => {
             days, you can keep all the clients we bring you for{" "}
             <span className="font-bold">completely free</span>, and we won't
             charge you a thing if you're not satisfied with the results. Think
-            of it as our way of saying, "Let's make this Winter outstanding for
+            of it as our way of saying, "Let's make this Summer outstanding for
             your business!"
             <br />
           </FadeInUp>
