@@ -8,15 +8,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Versocia - Social Media Marketing Agency",
   description:
-    "Versocia is a leading language school marketing agency that helps educational institutions attract more students through effective digital marketing strategies.",
-  keywords: "language school marketing, language school advertising, language school promotion, language school social media, language school SEO, SMMA, Social Media Marketing Agency, Agency",
+    "Versocia is a leading digital marketing agency that helps businesses attract more customers through effective and data-driven marketing strategies.",
+  keywords:
+    "digital marketing agency, online advertising, business growth, SEO, social media marketing, SMMA, lead generation, marketing services, paid ads, marketing strategy",
   icons: {
     icon: "https://i.ibb.co/BCQxch3/blackbg-logo.jpg",
   },
   openGraph: {
     title: "Versocia - Social Media Marketing Agency",
     description:
-      "Versocia is a leading language school marketing agency that helps educational institutions attract more students through effective digital marketing strategies.",
+      "Versocia is a leading digital marketing agency that helps businesses attract more customers through effective and data-driven marketing strategies.",
     url: "https://www.versocia.com/",
     siteName: "Versocia",
     images: [
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     ],
     locale: "en-US",
     type: "website",
-  }
+  },
 };
 
 export default function RootLayout({
